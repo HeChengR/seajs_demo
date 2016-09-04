@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src='./seajs/2.2.0/sea.js'></script>
+</head>
+<body>
+<input type="text" id='v1' value='2'>
+<input type="text" id='v2' value='4'>
+<script>
+    //引入模块的入口
+    seajs.use('./jar/calcultor',function(cal){
+           console.log(cal.add());
+    });
+</script>
+</body>
+</html>
